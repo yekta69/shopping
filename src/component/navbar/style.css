@@ -1,0 +1,16 @@
+
+.Logobar{
+   width: 100%;
+}
+.Logobar ul{
+   width: 100%;
+   display: flex;
+   justify-content: space-between!important;
+  
+}
+.Logobar ul img{
+    height: 50px;
+    width: 50px;
+     margin: 20px;
+   padding: 0%;
+}
