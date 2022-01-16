@@ -3,10 +3,12 @@ import ReactDOM from 'react-dom';
 import './index.css';
 import reportWebVitals from './reportWebVitals';
 import { Navbar } from './component/navbar';
+import{SpecialOffer} from'./component/specialOffer';
 
 ReactDOM.render(
   <React.StrictMode>
     <Navbar/>
+    <SpecialOffer/>
 
   </React.StrictMode>,
   document.getElementById('root')

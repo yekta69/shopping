@@ -2,20 +2,20 @@
 import  'bootstrap/dist/css/bootstrap.rtl.min.css'
 import '../navbar/style.css'
 export const Navbar =() =>{
-return <div>
+return <div className='main'>
     <div className='Logobar'>
         <ul>
-            <img className='logo' src={require("../navbar/index.jpg")} alt='لوگو'/>
+            <img className='logo' src={require("../navbar/image/index.jpg")} alt='لوگو'/>
               <div>
                <button type="button" class="btn btn-outline-danger">ورود/ثبتنام</button>
-               <img className='Shopping' src={require("../navbar/shopping-cart.png")} alt ='سبدخرید'/>
-          </div>
+               <img className='Shopping' src={require("../navbar/image/shopping-cart.png")} alt ='سبدخرید'/>
+              </div>
         </ul>
       </div>
  
 
 <div className='baner'>
-       <img src={require('../navbar/onlineShop.jpg')}  alt='بنر'/>
+       <img src={require('../navbar/image/onlineShop.jpg')}  alt='بنر'/>
 </div>
 <nav className="navbar navbar-expand-lg navbar-light bg-light">
 <div className="container-fluid">
