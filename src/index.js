@@ -4,12 +4,13 @@ import './index.css';
 import reportWebVitals from './reportWebVitals';
 import { Navbar } from './component/navbar';
 import{SpecialOffer} from'./component/specialOffer';
+import{FeacherMenu} from './component/FeaturesMenu'
 
 ReactDOM.render(
   <React.StrictMode>
     <Navbar/>
     <SpecialOffer/>
-
+    <FeacherMenu/>
   </React.StrictMode>,
   document.getElementById('root')
 );
