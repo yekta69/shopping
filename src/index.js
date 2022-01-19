@@ -4,12 +4,15 @@ import './index.css';
 import reportWebVitals from './reportWebVitals';
 import { Navbar } from './component/navbar';
 import{SpecialOffer} from'./component/specialOffer';
+import{FeacherMenu} from './component/FeaturesMenu';
+import {ProductCard} from './component/productCard'
 
 ReactDOM.render(
   <React.StrictMode>
     <Navbar/>
     <SpecialOffer/>
-
+    <FeacherMenu/>
+    <ProductCard/>
   </React.StrictMode>,
   document.getElementById('root')
 );

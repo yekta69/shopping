@@ -1,0 +1,40 @@
+.productCard{
+    height: 300px;
+    /* border: blue solid; */
+    display: flex;
+    background-image: url('../productCard/images/sugar.jpg');
+    padding: auto!important;
+    justify-content: space-between;
+
+ }
+.productCard img{
+    height: 150px;
+    width: 150px;
+    margin: auto;
+}
+.card{
+    /* border: rgb(138, 11, 81) solid; */
+    height: 250px;
+    width: 32%;
+    border-radius: 15px;
+    margin: auto;
+}
+.card .buy{
+    height: 30px;
+    width: 30px;
+    margin: auto;
+    border-radius: 10px;
+}
+.mainCard{
+    width: 950px;
+    display: flex;
+    justify-content:space-between!important;
+    /* border: springgreen solid; */
+}
+.card button{
+    height: 40px;
+    width: 30%;
+    margin-right: 200px;
+    margin-bottom: 10px;
+}
+
