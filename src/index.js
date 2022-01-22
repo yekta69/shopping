@@ -6,13 +6,14 @@ import { Navbar } from './component/navbar';
 import{SpecialOffer} from'./component/specialOffer';
 import{FeacherMenu} from './component/FeaturesMenu';
 import {ProductCard} from './component/productCard'
+import { BrowserRouter } from 'react-router-dom';
 
 ReactDOM.render(
   <React.StrictMode>
-    <Navbar/>
-    <SpecialOffer/>
-    <FeacherMenu/>
-    <ProductCard/>
+    <BrowserRouter>
+        <Navbar/>
+
+    </BrowserRouter>
   </React.StrictMode>,
   document.getElementById('root')
 );

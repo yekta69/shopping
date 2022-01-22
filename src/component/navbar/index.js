@@ -1,41 +1,46 @@
 
+import axios from 'axios';
 import  'bootstrap/dist/css/bootstrap.rtl.min.css'
-import '../navbar/style.css'
-export const Navbar =() =>{
-return <div className='main'>
-    <div className='Logobar'>
-        <ul>
-            <img className='logo' src={require("../navbar/image/index.jpg")} alt='لوگو'/>
-              <div>
-               <button type="button" class="btn btn-outline-danger">ورود/ثبتنام</button>
-               <img className='Shopping' src={require("../navbar/image/shopping-cart.png")} alt ='سبدخرید'/>
-              </div>
-        </ul>
-      </div>
- 
+import { useEffect, useLayoutEffect, useState } from 'react'
+import ApiSetvice from '../../service/apiService';
+import '../navbar/style.css';
+import react from 'react';
+import {Banner} from '../navbar/banner';
+const baseURL = "https://localhost:44342/api/User/Getuser?id=1";
 
-<div className='baner'>
-       <img src={require('../navbar/image/onlineShop.jpg')}  alt='بنر'/>
+export const Navbar =() =>{
+  const [data, setData] = useState({});
+
+  useEffect(() => {
+      ApiSetvice.getNavbarData()
+        .then(res=>{
+          setData(res);
+          console.log(res)
+        })
+        .catch((err) => console.log(err));
+  
+  }, []);
+  if (!data) {
+    return <div>...Loading</div>;
+  }
+  // const [data, setData] = useState({});
+  // useLayoutEffect(() => {
+  //   try {
+  //     ApiSetvice.getNavarData()
+  //       .then(setData)
+  //       .catch((err) => console.log("22222222" , data));
+  //   } catch (e) {
+  //     console.log(e);
+  //   }
+  // },[]);
+  // if (!data) {
+  //   return <div>...Loading</div>;
+
+
+
+return (
+<div className="main">
+<Banner url={data.lastName} />
 </div>
-<nav className="navbar navbar-expand-lg navbar-light bg-light">
-<div className="container-fluid">
-   <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-    <span className="navbar-toggler-icon"></span>
-  </button>
-  <div className="collapse navbar-collapse" id="navbarSupportedContent">
-    <ul className="navbar-nav me-auto mb-2 mb-lg-0">
-      <li className="nav-item">
-        <a className="nav-link active" aria-current="page" href="http://www.google.com">خانه</a>
-      </li>
-      <li className="nav-item">
-        <a className="nav-link active" aria-current="page" href="http://www.google.com">درباره ی ما</a>
-      </li>
-      <li className="nav-item">
-        <a className="nav-link active" aria-current="page" href="http://www.google.com">ارتباط با ما</a>
-      </li>
-      </ul>
-   </div>
-</div>
-</nav>
-</div>
+)
 }
