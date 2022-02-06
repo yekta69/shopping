@@ -5,8 +5,7 @@ export const SpecialOffer = (props) => {
   useEffect(() => {
     setData(props.data);
   }, [props.data]);
-  console.log("ttttt", data);
-  if (!data) {
+   if (!data) {
     return <div>...loading</div>;
   }
   return (

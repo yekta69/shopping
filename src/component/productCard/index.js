@@ -1,26 +1,35 @@
+import { useState } from "react";
+import {useEffect} from "react";
+import '../productCard/style.css';
+import React from "react";
 
-import '../productCard/style.css'
-export const ProductCard =() =>{
-    return <div className="productCard">
+export const ProductCard =(props) =>{
+
+    const [data,setData] = useState(props.data);
+    useEffect(() =>{
+     setData(props.data);
+     console.log("object",props.data)
+     },[props.data]);
+         if(!data){
+         return <div>...loading</div>  
+     }
+    return(
+      <div>
+    
+       { data.length>0? data.map((item)=>(
+        <div className="productCard">
         <div className='mainCard'>
-        <div className='card'>
-            <h5 className='productname'> برنج اعلا</h5>
-            <img src={require("../productCard/images/product1.jpg")}/>
-            <h5 className='Price'></h5>
-            <button type="button" class="btn btn-danger"><img className='buy' src={require("../productCard/images/shopping-cart-Pre.png")}/></button>
-        </div>
-        <div className='card'>
-            <h5 className='productname'> برنج اعلا</h5>
-            <img src={require("../productCard/images/product2.png")}/>
-            <h5 className='Price'></h5>
-            <button type="button" class="btn btn-danger"><img className='buy' src={require("../productCard/images/shopping-cart-Pre.png")}/></button>
-        </div>
-        <div className='card'>
-            <h5 className='productname'> برنج اعلا</h5>
-            <img src={require("../productCard/images/product3.jpg")}/>
-            <h5 className='Price'></h5>
-            <button type="button" class="btn btn-danger"><img className='buy' src={require("../productCard/images/shopping-cart-Pre.png")}/></button>
-        </div>
-        </div>
-        </div>
-         }
+         <div className='card'>
+             <h5 className='productname'>{data.firtname}</h5>
+             <img src={require("../productCard/images/product1.jpg")}/>
+             <h5 className='Price'></h5>
+             <button type="button" class="btn btn-danger"><img className='buy' src={require("../productCard/images/shopping-cart-Pre.png")}/></button>
+         </div>
+         </div>
+         </div>
+      )
+       ):<div></div>
+      }   
+            </div>
+    );
+  }

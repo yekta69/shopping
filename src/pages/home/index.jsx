@@ -1,14 +1,14 @@
 
 import {FeacherMenu} from '../../component/FeaturesMenu'
-import {ProductCard} from '../../component/productCard'
 import {SpecialOfferPage} from './SpecialOffer'
+import{ProductDardPage} from "./ProductCard"
 export const Homepage =() =>{
 
     return(
         <>
         <SpecialOfferPage/>
         <FeacherMenu/>
-        <ProductCard/>
+        <ProductDardPage/>
         </>
     )
 

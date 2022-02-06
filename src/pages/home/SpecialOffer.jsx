@@ -7,12 +7,12 @@ export const SpecialOfferPage = () => {
     ApiService.getSpicialOffer()
       .then((res) => {
         setData((perv) => res);
-        console.log("dataaa", res);
+        
       })
       .catch((err) => console.log(err));
   }, []);
 
-  console.log("888888", data);
+
   return (
     <>
       <SpecialOffer data={data} />

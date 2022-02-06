@@ -9,6 +9,10 @@ const ApiService ={
     async getSpicialOffer(){
         return axios.get(Urls.SpecialOfferUrl)
         .then((res) => res.data);
+    },
+    async getProductCard(){
+        return axios.get(Urls.ProductCard)
+        .then((res) =>{console.log(res.data); return res.data});
     }
    };
 export default ApiService;
