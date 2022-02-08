@@ -6,11 +6,13 @@ import '../navbar/style.css';
 import {Banner} from '../navbar/banner';
 
 
-export const Navbar =() =>{
+export const Navbar =(props) =>{
+
   const [data, setData] = useState(props.data);
+
   useEffect(() => {
           setData(props.data);
-          console.log("wwwwwwww",res.lastName)
+          console.log("wwwwwwww",data)
         }, [props.data]);
   if (!data) {
     return <div>...Loading</div>;
@@ -21,6 +23,7 @@ return (
  </div>
 )
 }
+
 
 
 
