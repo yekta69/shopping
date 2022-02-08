@@ -1,0 +1,7 @@
+.LoginBorder{
+
+    height: 500px;
+    width: 40%;
+    border: solid rgb(89, 86, 86) 1px;
+    border-radius: 10px;
+}

@@ -8,7 +8,6 @@ export const FeacherMenu =() =>{
      <img  src={require("../FeaturesMenu/image/icon3.png")}/>
      <img  src={require("../FeaturesMenu/image/icon5.png")}/>
      <img  src={require("../FeaturesMenu/image/icon6.png")}/>
-    
-    </div>
+     </div>
 }
 

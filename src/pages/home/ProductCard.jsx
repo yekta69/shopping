@@ -10,7 +10,6 @@ export const ProductDardPage =() => {
         ApiService.getProductCard()
         .then((res) =>{
         setData((Prev) => res);
-        console.log("999999",res)
         })
         .catch((err) => console.log(err));
     },[]);

@@ -7,17 +7,11 @@ import {Banner} from '../navbar/banner';
 
 
 export const Navbar =() =>{
-  const [data, setData] = useState({});
-
+  const [data, setData] = useState(props.data);
   useEffect(() => {
-      ApiSetvice.getNavbarData()
-        .then(res=>{
-          setData(res);
+          setData(props.data);
           console.log("wwwwwwww",res.lastName)
-        })
-        .catch((err) => console.log(err));
-  
-  }, []);
+        }, [props.data]);
   if (!data) {
     return <div>...Loading</div>;
   }
@@ -27,3 +21,6 @@ return (
  </div>
 )
 }
+
+
+
