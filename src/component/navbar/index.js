@@ -1,9 +1,10 @@
 
 import  'bootstrap/dist/css/bootstrap.rtl.min.css'
-import { useEffect,  useState } from 'react'
+import React, { useEffect,  useState } from 'react'
 import ApiSetvice from '../../service/apiService';
 import '../navbar/style.css';
 import {Banner} from '../navbar/banner';
+
 
 
 export const Navbar =(props) =>{

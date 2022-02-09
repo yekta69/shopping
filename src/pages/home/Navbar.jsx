@@ -14,15 +14,10 @@ export const NavbarPage =() =>{
         })
         .catch((err) => console.log(err));
     },[]);
-      
-     return(
-
+    return(
       <>
       <Navbar data ={data}/>
       </>
-
-
-
     )
 }
 

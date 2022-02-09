@@ -9,7 +9,6 @@ return (<div className='baner'>
           {/* <button type="button" className="btn btn-outline-danger" onclick="location.href = 'www.google.com';">
           ppppppppp
            </button> */}
-
            <Link to="/log" href="#" className='btn btn primary'>
              ثبتنام/ورود
            </Link>

@@ -7,7 +7,6 @@ import { Login } from './component/Login';
 function App() {
   return (
    <>
-  <Navbar/>
   <Routes>
     <Route path="/" element={<Homepage/>}/>
     <Route path='/log' element={<Login/>}/>
