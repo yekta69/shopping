@@ -1,5 +1,6 @@
 import { useEffect, useState } from "react";
 import "../specialOffer/style.css";
+import{CartIcon} from "../cart/cart-icon"
 export const SpecialOffer = (props) => {
   const [data, setData] = useState(props.data);
   useEffect(() => {
@@ -25,6 +26,7 @@ export const SpecialOffer = (props) => {
           <button type="button" className="btn btn-danger">
             حالا بخرید
           </button>
+          <CartIcon/>
         </div>
       </div>
     </div>
