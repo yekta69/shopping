@@ -1,12 +1,11 @@
 
+import  'bootstrap/dist/css/bootstrap.min.css'
 import "../cart/style.css"
 import React from "react"
-import bootstrap from "bootstrap"
 export const CartIcon =() =>{
-
 return(
     <div>
-    <img className="cart" src={require("./image/shopping-cart.png")}/>
-    <span class="badge badge-pill badge-danger">Danger</span>
+    <img with="20"className="cart" src={require("./image/shopping-cart.png")}/>
+    <span className="badge badge-danger badge-pill">5</span>
     </div>
 )}

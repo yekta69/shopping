@@ -1,8 +1,9 @@
-/* .cart{
+.cart{
     height: 100px!important;
     width: 100px!important;
-} */
+}
 
 span{
     border: springgreen solid 2px;
+    background-color: brown;
 }
