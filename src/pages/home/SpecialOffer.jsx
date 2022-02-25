@@ -7,7 +7,7 @@ export const SpecialOfferPage = () => {
     ApiService.getSpicialOffer()
       .then((res) => {
         setData((perv) => res);
-        
+        console.log("112",res)
       })
       .catch((err) => console.log(err));
   }, []);

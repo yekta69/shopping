@@ -44,7 +44,26 @@ img{
   position: absolute;
   width: 100%;
   top: 320px;
+
 }
 .navbar ul{
    margin:auto!important;
+}
+
+.login{
+   /* border:  solid 2px black;width: 200px; */
+   display: flex;
+   justify-content: space-between!important;
+   height: 50px;
+   width: 180px;
+
+}
+.link{
+   /* border: solid 2px black; */
+   margin-top: 15px!important;
+
+}
+
+.icon{
+   margin-top: 5px!important;
 }

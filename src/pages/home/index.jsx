@@ -1,16 +1,16 @@
 
 import {FeacherMenu} from '../../component/FeaturesMenu'
 import {SpecialOfferPage} from './SpecialOffer'
-import{ProductDardPage} from "./ProductCard"
-import { Navbar } from '../../component/navbar'
+import{ProductCardPage} from "./ProductCard"
+import {NavbarPage} from './Navbar'
 export const Homepage =() =>{
 
     return(
         <>
-        <Navbar/>
+        <NavbarPage/>
         <SpecialOfferPage/>
         <FeacherMenu/>
-        <ProductDardPage/>
+        <ProductCardPage/>
         </>
     )
 

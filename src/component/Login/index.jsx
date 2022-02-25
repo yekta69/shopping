@@ -2,7 +2,7 @@
 import{} from './style.css'
 export const Login =() =>{
     return(
-        <div className='main'>
+        <div className='mainLogin'>
         <div className="LoginBorder">
             <h1>فروشگاه سگال</h1>
             <h4>ورود | ثبت نام</h4>

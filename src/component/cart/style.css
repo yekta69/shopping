@@ -6,3 +6,14 @@
 span{
     border: springgreen solid 2px;
 }
+
+.badge{
+    border: 2px solid #ff0000;
+    border-radius: 20px!important;
+    width: 25px;
+    background-color: #ff0000;
+    position: absolute;
+    margin-top: -1px;
+  }
+
+  

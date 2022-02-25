@@ -21,9 +21,9 @@ export const ProductCard =(props) =>{
         <div className='mainCard'>
          <div className='card'>
              <h5 className='productname'>{data.firtname}</h5>
-             <img src={require("../productCard/images/product1.jpg")}/>
-             <h5 className='Price'></h5>
-             <button type="button" class="btn btn-danger"><img className='buy' src={require("../productCard/images/shopping-cart-Pre.png")}/></button>
+             <img src={require("../productCard/images/product1.jpg")} alt="Product"/>
+             <h5 className='Price'>قیمت</h5>
+             <button type="button" className="btn btn-danger"><img className='buy' src={require("../productCard/images/shopping-cart-Pre.png")} alt= "product"/></button>
          </div>
          </div>
          </div>

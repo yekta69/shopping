@@ -3,7 +3,7 @@ import {useEffect} from "react";
 import ApiService from "../../service/apiService";
 import {ProductCard} from '../../component/productCard'
 
-export const ProductDardPage =() => {
+export const ProductCardPage =() => {
 
     const [data,setData] = useState([]);
     useEffect (() =>{

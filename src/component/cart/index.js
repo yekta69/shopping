@@ -1,8 +1,1 @@
-
-export const Cart =() =>{
-
-
-
-
-
-}
+export * from './cart-icon'

@@ -4,7 +4,7 @@ import{Urls} from '../service/Urls'
 const ApiService ={
     async getNavbarData() {
         return axios.get(Urls.navbarUrl
-        ).then((res) => res.data);
+        ).then((res) =>{console.log("111",res.data); return res.data});
     },
     async getSpicialOffer(){
         return axios.get(Urls.SpecialOfferUrl)
@@ -12,7 +12,7 @@ const ApiService ={
     },
     async getProductCard(){
         return axios.get(Urls.ProductCard)
-        .then((res) =>{console.log(res.data); return res.data});
+        .then((res) =>{console.log("ooooooo",res.data); return res.data});
     }
    };
 export default ApiService;

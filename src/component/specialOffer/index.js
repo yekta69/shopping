@@ -1,14 +1,27 @@
 import { useEffect, useState } from "react";
 import "../specialOffer/style.css";
-import{CartIcon} from "../cart/cart-icon"
+import{CartIcon} from "../Cart/cart-icon"
+// import { addtoCart, cartstore } from "../redux";
+import {Link} from 'react-router-dom'
 export const SpecialOffer = (props) => {
   const [data, setData] = useState(props.data);
   useEffect(() => {
     setData(props.data);
-  }, [props.data]);
+
+    // cartstore.subscribe(() =>{
+    //   console.log(cartstore.getState());
+    // });
+  }, [props.data])
+  ;
    if (!data) {
     return <div>...loading</div>;
   }
+
+//  const addtocartHandler =() =>{
+//    cartstore.dispach(addtoCart(this.state.data))
+//  }
+
+ 
   return (
     <div className="specialoffer">
       <div className="specialofferData">
@@ -26,8 +39,7 @@ export const SpecialOffer = (props) => {
           <button type="button" className="btn btn-danger">
             حالا بخرید
           </button>
-          <CartIcon/>
-        </div>
+          </div>
       </div>
     </div>
   );
