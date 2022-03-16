@@ -8,18 +8,16 @@ return (<div className='baner'>
       <ul>
         <img className="logo" src={require("../navbar/image/index.jpg")} alt="لوگو" />
         <div className='login'>
-          {/* <button type="button" className="btn btn-outline-danger" onclick="location.href = 'www.google.com';">
-          ppppppppp
-           </button> */}
-           <div className='link'>
+             <div className='link'>
              <Link to="/log" href="#" className='btn btn-outline-danger'>
              ثبتنام/ورود
            </Link>
            </div>
+           <Link to="/cart">
            <div className='icon'>
               <CartIcon/>
            </div>
-          
+           </Link>
         </div>
       </ul>
     </div>
