@@ -10,7 +10,7 @@ return (<div className='baner'>
         <div className='login'>
              <div className='link'>
              <Link to="/log" href="#" className='btn btn-outline-danger'>
-             ثبتنام/ورود
+             ثبتنام | ورود
            </Link>
            </div>
            <Link to="/cart">
