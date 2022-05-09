@@ -15,6 +15,7 @@ export const SpecialOffer = (props) => {
     // });
   }, [props.data]);
 
+  console.log("222", data);
   const dispach = useDispatch();
   if (!data) {
     return <div>...loading</div>;

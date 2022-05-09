@@ -1,6 +1,6 @@
 
 import {LogIn} from './LogIn'
-export const Login =() =>{
+export const LoginPage =() =>{
     return(
        
         <>

@@ -21,7 +21,7 @@ return (<div className='baner'>
         </div>
       </ul>
     </div>
-    <img src={url} alt="بنر"></img>
+    <img src={url} alt="بنر"/>
 </div>
 );
 }

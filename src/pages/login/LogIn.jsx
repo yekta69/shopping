@@ -1,4 +1,4 @@
-import { Register } from "../../component/Register"
+import {Login} from "../../component/LogIn"
 import ApiService from "../../service/apiService";
 export const LogIn =() =>{
 
@@ -11,16 +11,8 @@ export const LogIn =() =>{
             console.log("200","ok")
         }
     }
-   
-    // useEffect(() =>{
-    //     ApiService.getNavbarData()
-    //     .then((res)=>{
-    //         setData((prev)=>res);
-    //         console.log("109",res)
-    //     })
-    //     .catch((err) => console.log(err));
-    // },[]);
+  
     return(
-        <Register onRegister ={submitRegister.bind(this)}/>
+        <Login onRegister ={submitRegister.bind(this)}/>
     )
 }

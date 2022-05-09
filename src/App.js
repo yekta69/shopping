@@ -1,7 +1,7 @@
 import { Route, Routes } from "react-router-dom";
 import { Homepage } from "./pages";
-import { Register } from "./component/Register";
-import { Login } from "./pages/login";
+import { Login } from "./component/LogIn";
+import { LoginPage } from "./pages/login";
 import { CartPage } from "./pages";
 import { Provider } from "react-redux";
 import { cartstore } from "./component/productCard";
@@ -14,7 +14,7 @@ function App() {
       <Provider store={cartstore}>
         <Routes>
           <Route path="/" element={<Homepage />} />
-          <Route path="/log" element={<Login />} />
+          <Route path="/log" element={<LoginPage />} />
           <Route path="/cart" element={<CartPage />} />
         </Routes>
       </Provider>
