@@ -7,17 +7,19 @@ export const Login=(props) =>{
         const [steps,setSteps]=useState(1)
     return(
 
-       
            <div className="LoginBorder">
+          
+           {(steps===2 || steps===3) && <button className='BackButton' onClick={()=>setSteps(1)}>بازگشت</button>}
+           <br/>
            <img className='image' src='/assets/images/Register/Logo.png' alt="کالانید"/>
-           {(steps===2 || steps===3) && <button onClick={()=>setSteps(1)}>برگشت</button>}
+      
            {
                steps===1 && <GetMobileNumber steps={steps} setSteps={setSteps} {...props}/>
            }            
-            {  steps===2&&<GetCodeNumber/>}
+            {  steps===2&&<GetCodeNumber {...props}/>}
             {steps===3&&"Register"}
            </div> 
-            
+           
   
     )
 }

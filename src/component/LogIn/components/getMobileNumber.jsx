@@ -11,7 +11,7 @@ export const GetMobileNumber =(props)=>{
           props.onRegister(state.data);
           setState({data:{} ,errors :{}})
           if(user){
-                        props.setSteps(2)
+                    props.setSteps(2)
 
           }else     props.setSteps(3)
 
@@ -42,7 +42,7 @@ export const GetMobileNumber =(props)=>{
     <small className='form-text text-danger'>
     {state.errors.mobileNumber}
     </small>
-    <button type='submit'>ورود</button>
+    <button className="LoginButton" type='submit'>ورود</button>
     <p className='note' > تمام حقوق این وب سایت متعلق به فروشگاه آنلاین کالانید است.</p>
     </form>
 }

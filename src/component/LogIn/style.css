@@ -23,7 +23,7 @@
       /* border: 2px solid red; */
     }
 
-    button{
+    .LoginButton{
       background-color:#c42026;
     
       width: 100%;
@@ -59,15 +59,14 @@ p{  margin-top: 8%;
     text-align: center;
     margin-right: 30px;
     }
-   
-    /* input{
-        text-align: right;
-        width: 100%;
-        height: 50px;
-        margin-left: 100px!important;
-        padding: 10px;
-    } */
 
+ .BackButton{
+  border: none;
+  background-color: white;
+  font-size: 10px;
+  color: blue;
+margin-right: 300px;
+ }
 
 
 
