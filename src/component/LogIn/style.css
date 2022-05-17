@@ -68,7 +68,16 @@ p{  margin-top: 8%;
 margin-right: 300px;
  }
 
+ #GetCode{
+   border:none;
+   background: none;
+   color: blue;
+   pointer-events: painted;
+ }
 
+ span{
+   border: none;
+ }
 
    
    

@@ -3,7 +3,7 @@ import { useState } from "react";
 export const GetMobileNumber =(props)=>{
     const [state ,setState] = useState({data :{}, errors:{}});
     const user=true
-  
+  console.log("ms",props)
     const submitHandler = event =>{
       event.preventDefault();
       console.log("state",state)
@@ -11,10 +11,8 @@ export const GetMobileNumber =(props)=>{
           props.onRegister(state.data);
           setState({data:{} ,errors :{}})
           if(user){
-                    props.setSteps(2)
-
-          }else     props.setSteps(3)
-
+                    props.setSteps({steps:2 ,usermobile:state.data.mobileNumber})
+          }else     props.setSteps({steps:3 ,usermobile:state.data.mobileNumber})
 
       }
    }
@@ -29,13 +27,13 @@ export const GetMobileNumber =(props)=>{
     }
       
     const changeHandler = event=>{
-    //   console.log("trtrtr",event.target.value)
+      // console.log("trtrtrrrrrrrrrrrrrrrrrrrrrrrrrrrrrr",event.target.value)
     const formِِِِِData ={[event.target.name]:event.target.value};
     setState({...state,data:{...state.data,...formِِِِِData}})
     
     console.log("bbbb",formِِِِِData)
     }
-    return <form onSubmit={submitHandler}> {console.log("5555555",state)}
+    return <form onSubmit={submitHandler}>
     <h6>ورود | ثبت نام</h6>
     <p>لطفا شماره موبایل خود را وارد نمایید:</p>
     <input value ={state.data.mobileNumber || ""}  name='mobileNumber' onChange={changeHandler}></input>

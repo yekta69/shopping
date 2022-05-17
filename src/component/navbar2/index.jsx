@@ -1,4 +1,5 @@
 import { Baner } from "./baner";
+import './style.css'
 
 export const Navbar2 = () => {
   return (
