@@ -1,46 +1,40 @@
 import { useEffect, useState } from "react";
 import "../specialOffer/style.css";
 import { useDispatch } from "react-redux";
-// import{CartIcon} from "../Cart/cart-icon"
-import { addtoCart, cartstore } from "../productCard/redux";
-// import {Link} from 'react-router-dom'
+import { AddToCart } from "../productCard/redux";
 
 export const SpecialOffer = (props) => {
   const [data, setData] = useState(props.data);
   useEffect(() => {
     setData(props.data);
-
-    // cartstore.subscribe(() => {
-    //   console.log("log", cartstore.getState());
-    // });
   }, [props.data]);
 
   console.log("222", data);
-  const dispach = useDispatch();
+  const dispatch = useDispatch();
   if (!data) {
     return <div>...loading</div>;
   }
-  const addtocartHandler = () => {
-    dispach(addtoCart(data));
-    console.log("test", addtoCart);
+  const AddToCartHandler = () => {
+    dispatch(AddToCart(data));
+    console.log("test", AddToCart);
   };
 
   return (
-    <div className="specialoffer">
-      <div className="specialofferData">
+    <div className="SpecialOffer">
+      <div className="SpecialOfferData">
         <img
-          src={require("../specialOffer/image/spesial.jpg")}
+          src={require("../specialOffer/image/Special.jpg")}
           alt="پیشنهاد ویژه"
         />
         {/* <img src ={data.image} alt="پیشنهاد ویژه"/> */}
         <div className="information">
-          <h2>{data.firstname}</h2>
+          <h2>{data.FirstName}</h2>
           <h4>{data.lastName}</h4>
           <h6>
-            هر {data.nationalcode} : {data.password} تومان
+            هر {data.NationalCode} : {data.password} تومان
           </h6>
           <button
-            onClick={addtocartHandler}
+            onClick={AddToCartHandler}
             type="button"
             className="btn btn-danger"
           >

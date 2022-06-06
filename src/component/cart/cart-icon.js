@@ -2,7 +2,6 @@ import React from "react";
 import "./style.css";
 import "bootstrap/dist/css/bootstrap.min.css";
 import { useSelector } from "react-redux";
-//import { addtoCart, cartstore } from "../productCard/redux";
 
 export const CartIcon = () => {
   const count = useSelector((state) => {

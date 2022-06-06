@@ -17,9 +17,9 @@ export const NavbarPage =() =>{
         .catch((err) => console.log(err));
     },[]);
     return(
-      <>
+      
       <Navbar data ={data}/>
-      </>
+    
     );
 };
 

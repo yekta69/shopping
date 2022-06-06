@@ -1,0 +1,147 @@
+.RightBar{
+    border:1px solid #e0e0e2;
+    border-radius: 10px;
+    width: 30%;
+    /* margin: 70px; */
+    padding: 50px;
+
+}
+
+.UserIcon{
+    width: 9%;
+    height: 50px;
+    margin-left: 12px;
+    
+}
+
+.Profile{
+    display:flex
+}
+
+.UserNumber{
+
+
+    color: #cfcfd2;
+}
+
+.UserName{
+    border: none;
+
+}
+.Link{
+    display: block !important;
+/* border: black solid 2px; */
+padding: 15px;
+
+
+}
+
+span{
+
+    /* border-top:1px solid #e0e0e2!important; */
+      font-size: 20px;
+  
+}
+
+.Sidebar{
+
+    margin-top: 20px;
+    border-top:2px solid #e0e0e2!important; 
+    padding: 15px;
+
+}
+
+.SidebarIcon{
+
+    width: 8%;
+    height:20%;
+    margin-left: 10px;
+}
+
+.ProfilePage{
+
+    display:flex;
+    margin: 70px;
+}
+
+.MainPage{
+
+    border:1px solid #e0e0e2;
+    border-radius: 10px;
+    width: 60%;
+    /* margin: 70px; */
+    margin-right: 20px;
+    padding: 50px;
+}
+
+.btn-outline{
+border: none;
+
+}
+
+.btn-outline-dark:hover{
+background-color: none!important;
+    }
+
+    .nav-link{
+        color: black!important;
+    }
+
+
+    .SidebarBtn{
+
+
+        border:none;
+        background-color: white;
+    }
+
+    .SidebarBtn::selection{
+
+        border: black solid 2px;
+    }
+   
+    .orderImg {
+
+        display: flex;
+     
+    }
+
+    .orderImg img{
+
+        display: flex;
+        height: 70px!important;
+        width: 13%;
+        margin-left: 10px;
+    }
+    .mainData{
+
+        border:1px solid #e0e0e2;
+        border-radius: 10px;
+        margin-top:15px;
+        padding: 30px!important;
+    }
+
+    .spanStyle{
+        margin-left: 25px;
+    }
+
+    .spanSpace{
+        margin-left: 25px;
+        color :#e0e0e2;
+    }
+
+  .AccountTable{
+      border-style: hidden;
+      height: 200px;
+      width: 100%;
+      margin-top: 40px;
+      }
+
+
+        
+            td {
+                border: 1px solid rgb(247, 237, 237);
+                width:200px!important;
+              padding: 10px;
+              
+            }

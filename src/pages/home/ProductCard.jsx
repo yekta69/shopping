@@ -14,9 +14,9 @@ export const ProductCardPage =() => {
         .catch((err) => console.log(err));
     },[]);
     return(
-    <>
+    
     <ProductCard data={data}/>
-    </>
+    
     );
 };
 

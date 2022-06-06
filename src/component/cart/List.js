@@ -1,6 +1,6 @@
 import React from "react";
 import { useDispatch } from "react-redux";
-import { removefromCart } from "../productCard";
+import { RemoveFromCart } from "../productCard";
 import "./style.css";
 
 export const Cart = ({ products }) => {
@@ -13,11 +13,11 @@ export const Cart = ({ products }) => {
     );
   }
 
-  const removeHandler = (product) => {
-    dispatch(removefromCart(product));
+  const RemoveHandler = (product) => {
+    dispatch(RemoveFromCart(product));
   };
   return (
-    <table className="table">
+    <table>
       <thead>
         <tr>
           <th scope="col">#</th>
@@ -37,13 +37,13 @@ export const Cart = ({ products }) => {
               <img
                 className="ProductImg"
                 src={props.image}
-                alt="props.firstname"
+                alt={props.firstname}
               />
             </td>
             <td>{props.id}</td>
             <td>
               <button
-                onClick={() => removeHandler(props)}
+                onClick={() => RemoveHandler(props)}
                 class="btn btn-danger"
               >
                 Remove

@@ -11,8 +11,8 @@ export const GetMobileNumber =(props)=>{
           props.onRegister(state.data);
           setState({data:{} ,errors :{}})
           if(user){
-                    props.setSteps({steps:2 ,usermobile:state.data.mobileNumber})
-          }else     props.setSteps({steps:3 ,usermobile:state.data.mobileNumber})
+                    props.setSteps({steps:2 ,UserMobile:state.data.mobileNumber})
+          }else     props.setSteps({steps:3 ,UserMobile:state.data.mobileNumber})
 
       }
    }
@@ -27,11 +27,9 @@ export const GetMobileNumber =(props)=>{
     }
       
     const changeHandler = event=>{
-      // console.log("trtrtrrrrrrrrrrrrrrrrrrrrrrrrrrrrrr",event.target.value)
+   
     const formِِِِِData ={[event.target.name]:event.target.value};
     setState({...state,data:{...state.data,...formِِِِِData}})
-    
-    console.log("bbbb",formِِِِِData)
     }
     return <form onSubmit={submitHandler}>
     <h6>ورود | ثبت نام</h6>

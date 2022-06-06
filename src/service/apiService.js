@@ -17,7 +17,6 @@ const ApiService = {
       return res.data;
     });
   },
-
   async createUser(mobilenumber) {
     return axios.post(Urls.createUser, mobilenumber).then((res) => {
       console.log("create", res);
@@ -26,7 +25,6 @@ const ApiService = {
   //   async createUser() {
   //     return axios.post(Urls.createUser).then;
   //   },
-
   // createUser: (mobileNumber) => axios.post(Urls.createUser, mobileNumber),
 };
 export default ApiService;
